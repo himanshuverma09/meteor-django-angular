@@ -1,0 +1,26 @@
+<head>
+  <title>Created by Himanshu</title>
+</head>
+
+<body>
+  <div class="container" ng-app="testing-ddp">
+      <div class="page-header">
+          <h1 id="timeline">Timeline created in Django+AngularJS+Meteor(django-dpp)</h1>
+      </div>
+      <div ng-controller="ddp-controller">
+      <ul class="timeline">
+        <li class=""  ng-repeat="x in notification| orderBy:'-created_at'" ng-class="$even ? 'timeline' : 'timeline-inverted'">
+          <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+            <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><span data-ng-bind="x.heading"></span></h4>
+            </div>
+            <div class="timeline-body">
+              <p><span data-ng-bind="x.description"></span></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
