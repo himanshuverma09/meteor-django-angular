@@ -1,0 +1,12 @@
+Django==1.9.6
+django-cors-headers==1.1.0
+django-ddp==0.19.1
+gevent==1.1.1
+gevent-websocket==0.9.5
+greenlet==0.4.9
+meteor-ejson==1.1.0
+psycogreen==1.0
+psycopg2==2.6.1
+pybars3==0.9.1
+PyMeta3==0.5.1
+six==1.10.0
